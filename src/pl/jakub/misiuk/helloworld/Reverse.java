@@ -6,28 +6,17 @@ import java.util.Scanner;
 
 public class Reverse {
 
-
     Scanner scanner = new Scanner(System.in);
-    int wielkosc = 0;
-    int[] tablica = new int[wielkosc];
-    int wielkosc2 = -1;
 
     public void numbers() {
 
-        while (scanner.hasNextInt()) {
-            wielkosc2++;
-            for (int i = wielkosc2; i < tablica.length; i++) {
-                tablica[i] = scanner.nextInt();
+        String string = scanner.nextLine();
 
-                System.out.println(tablica[i]);
+        String [] tab = string.split(" ");
 
-                for (int j = tablica.length - 1; j >= 0; j--) {
-                    System.out.println(tablica[j]);
-
-                }
-            }
+        for (int i = tab.length-1; i>=0; i--){
+            System.out.println(tab[i]);
         }
-
     }
 
     public static void main(String[] args) {
