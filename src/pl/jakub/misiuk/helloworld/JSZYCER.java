@@ -13,6 +13,7 @@ public class JSZYCER {
 
         do {
             letters = scanner.nextLine();
+            letters=letters.toUpperCase();
             char[] newLetters = letters.toCharArray();
             int temp = 0;
             char[] tab = new char[newLetters.length];
