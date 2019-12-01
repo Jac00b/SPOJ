@@ -18,7 +18,7 @@ public class JSZYCER {
             char[] tab = new char[newLetters.length];
             for (int i = 0; i < newLetters.length; i++) {
                 if (newLetters[i] == ' ') {
-                    tab[i]=newLetters[i];
+                    tab[i] = newLetters[i];
                     temp++;
                     continue;
                 }
@@ -26,10 +26,8 @@ public class JSZYCER {
 
 
                     if (alphabet[j] == newLetters[i] && j < alphabet.length - 3) {
-                        tab[temp] = alphabet[j+3];
+                        tab[temp] = alphabet[j + 3];
                         temp++;
-
-
                     }
                     if ((j == alphabet.length - 3) && alphabet[j] == newLetters[i]) {
                         tab[temp] = alphabet[0];
@@ -46,8 +44,8 @@ public class JSZYCER {
 
             for (int i = 0; i < newLetters.length; i++) {
                 System.out.print(tab[i]);
-
-            }System.out.println("");
+            }
+            System.out.println("");
         } while (scanner.hasNextLine());
 
     }
